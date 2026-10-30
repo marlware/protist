@@ -22,12 +22,18 @@ protist/
 
 ## Why these technologies
 
-Each tool was picked for a reason. Here's what each one does for Protist.
+- **HTML and CSS** are all a simple page needs
+- **Docker** packages the page and server together
+- **Nginx** is a fast, light web server
+- **Alpine** keeps the image small
 
-- **HTML and CSS** are all a simple page needs, with no build step at all
-- **Docker** packages the page and its web server together, so it runs the same everywhere
-- **Nginx** is a fast, lightweight web server that's great at serving plain files
-- **The alpine version** keeps the container image small
+Here's how the pieces connect.
+
+```mermaid
+flowchart LR
+    Browser["Browser"] --> Nginx["Nginx on Alpine, inside Docker"]
+    Nginx --> Files["index.html + styles.css"]
+```
 
 ## Running it
 
