@@ -20,6 +20,15 @@ protist/
 └── styles.css
 ```
 
+## Why these technologies
+
+Each tool was picked for a reason. Here's what each one does for Protist.
+
+- **HTML and CSS** are all a simple page needs, with no build step at all
+- **Docker** packages the page and its web server together, so it runs the same everywhere
+- **Nginx** is a fast, lightweight web server that's great at serving plain files
+- **The alpine version** keeps the container image small
+
 ## Running it
 
 You'll need Docker. Then do these steps from the project folder.
