@@ -27,8 +27,6 @@ protist/
 - **Nginx** is a fast, light web server
 - **Alpine** keeps the image small
 
-Here's how the pieces connect.
-
 ```mermaid
 flowchart LR
     Browser["Browser"] --> Nginx["Nginx on Alpine, inside Docker"]
